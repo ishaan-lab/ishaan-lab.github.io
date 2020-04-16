@@ -10,7 +10,7 @@
 </head>
 <body>
 	
-	<div class = "navbar">
+	<div id = "navbar">
 		<a href="notedSymptoms.html">Noted Symptoms</a>
 		<a href="whatWeKnow.html">What We Know</a>
 		<a href="howYouCanHelp.html">How You Can Help</a>
@@ -24,13 +24,13 @@
 	
 	<style>
 /* Style the navbar */
-.navbar {
+#navbar {
   overflow: hidden;
   background-color: #333;
 }
 
 /* Navbar links */
-.navbar a {
+#navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -65,7 +65,7 @@
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-class navbar = document.getElementById("navbar");
+var navbar = document.getElementById("navbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
